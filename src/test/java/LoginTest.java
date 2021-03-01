@@ -20,10 +20,8 @@ public class LoginTest {
 
     @Test
     public void loginTest(){
-        driver.get("http://localhost/litecart/litecart-1.3.7/public_html/admin/");
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
+        LoginStep loginStep = new LoginStep(driver, wait);
+        loginStep.loginTest();
     }
 
     @AfterEach

@@ -1,12 +1,20 @@
 MyFirstTest.java
  MyFirstTest
-LoginTest.java
- LoginTest
-FirefoxOldLoginTest.java
- FirefoxOldLoginTest
-SafariLoginTest.java
- SafariLoginTest
-FirefoxNewLoginTest.java
- FirefoxNewLoginTest
 FirefoxNightlyLoginTest.java
  FirefoxNightlyLoginTest
+LoginTest.java
+ LoginTest
+SafariLoginTest.java
+ SafariLoginTest
+FirefoxOldLoginTest.java
+ FirefoxOldLoginTest
+LoginStep.java
+ LoginStep
+FirefoxNewLoginTest.java
+ FirefoxNewLoginTest
+CheckExistence.java
+ CheckExistence
+ClickMenuTest.java
+ ClickMenuTest
+CheckStickersTest.java
+ CheckStickersTest
