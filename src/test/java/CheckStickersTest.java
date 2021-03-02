@@ -4,9 +4,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CheckStickersTest {
@@ -24,10 +26,12 @@ public class CheckStickersTest {
     @Test
     public void checkStickersTest (){
         driver.get("http://localhost/litecart/litecart-1.3.7/public_html/en/");
-        int stickersCount  = driver.findElements(By.cssSelector(".product .sticker")).size();
-        int ducksCount  = driver.findElements(By.cssSelector(".product")).size();
-        System.out.println("Number of products: " + ducksCount + " "+ "Number of stickers: " + stickersCount);
-        Assert.assertTrue(ducksCount==stickersCount);
+
+        List<WebElement> productsList = driver.findElements(By.cssSelector(".product"));
+        for (WebElement e: productsList
+             ) {
+            Assert.assertTrue(e.findElements(By.cssSelector(".product .sticker")).size()==1);
+        }
     }
 
     @AfterEach

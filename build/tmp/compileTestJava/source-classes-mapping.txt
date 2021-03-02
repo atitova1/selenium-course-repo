@@ -4,17 +4,17 @@ FirefoxNightlyLoginTest.java
  FirefoxNightlyLoginTest
 LoginTest.java
  LoginTest
-SafariLoginTest.java
- SafariLoginTest
+ClickMenuTest.java
+ ClickMenuTest
 FirefoxOldLoginTest.java
  FirefoxOldLoginTest
 LoginStep.java
  LoginStep
-FirefoxNewLoginTest.java
- FirefoxNewLoginTest
 CheckExistence.java
  CheckExistence
-ClickMenuTest.java
- ClickMenuTest
+FirefoxNewLoginTest.java
+ FirefoxNewLoginTest
+SafariLoginTest.java
+ SafariLoginTest
 CheckStickersTest.java
  CheckStickersTest
