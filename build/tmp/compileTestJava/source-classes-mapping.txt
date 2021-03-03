@@ -1,5 +1,7 @@
 MyFirstTest.java
  MyFirstTest
+CheckStickersTest.java
+ CheckStickersTest
 FirefoxNightlyLoginTest.java
  FirefoxNightlyLoginTest
 LoginTest.java
@@ -16,5 +18,5 @@ FirefoxNewLoginTest.java
  FirefoxNewLoginTest
 SafariLoginTest.java
  SafariLoginTest
-CheckStickersTest.java
- CheckStickersTest
+AlfabetCountryTest.java
+ AlfabetCountryTest
