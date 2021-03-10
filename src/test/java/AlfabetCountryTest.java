@@ -37,7 +37,17 @@ public class AlfabetCountryTest{
     }
 
     @Test
-    public void timeZonesAflabetTest() {
+    public void alfabetGeoZonesTest() {
+        LoginStep loginStep = new LoginStep(driver, wait);
+        loginStep.loginTest();
+        driver.get("http://localhost/litecart/litecart-1.3.7/public_html/admin/?app=geo_zones&doc=geo_zones");
+        alfabetCheckSort("[name = geo_zones_form] :nth-child(5) a");
+
+    }
+
+
+    @Test
+    public void timeZonesAflabetTestOnCountriesPage() {
         LoginStep loginStep = new LoginStep(driver, wait);
         loginStep.loginTest();
         driver.get("http://localhost/litecart/litecart-1.3.7/public_html/admin/?app=countries&doc=countries");
@@ -60,6 +70,30 @@ public class AlfabetCountryTest{
         }
     }
 
+    @Test
+    public void timeZonesAflabetTestOnZonesPage() {
+        LoginStep loginStep = new LoginStep(driver, wait);
+        loginStep.loginTest();
+        driver.get("http://localhost/litecart/litecart-1.3.7/public_html/admin/?app=geo_zones&doc=geo_zones");
+        ArrayList<String> countryItems = new ArrayList();
+        List<WebElement> elementsList = driver.findElements(By.cssSelector("[name = geo_zones_form] .row"));
+
+        for (WebElement w: elementsList
+        ) {
+            if (!w.findElement(By.cssSelector("[name = geo_zones_form] .row :nth-child(4)")).getText().equals("0")){
+                System.out.print(w.findElement(By.cssSelector("[name = geo_zones_form] .row :nth-child(3)")).getText());
+                countryItems.add((w.findElement(By.cssSelector("[name = geo_zones_form] .row :nth-child(3)")).getText()));
+            }
+
+        }
+        for (String c: countryItems
+        ) {
+            driver.findElement(By.linkText(c)).click();
+            alfabetCheckSort("select[name*=zone_code]");
+            driver.get("http://localhost/litecart/litecart-1.3.7/public_html/admin/?app=geo_zones&doc=geo_zones");
+        }
+    }
+
     public void alfabetCheckSort(String locator) {
 
         ArrayList<String> countryItems = new ArrayList();
@@ -75,6 +109,7 @@ public class AlfabetCountryTest{
 
         Assert.assertTrue(countryItems.equals(countrySortedItems));
     }
+
     @AfterEach
     public void stop() {
         driver.quit();
