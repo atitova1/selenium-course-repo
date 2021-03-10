@@ -22,3 +22,5 @@ CorrectOpenedPageTest.java
  CorrectOpenedPageTest
 AlfabetCountryTest.java
  AlfabetCountryTest
+CreateNewUserTest.java
+ CreateNewUserTest
