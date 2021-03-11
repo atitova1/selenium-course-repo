@@ -20,7 +20,7 @@ FirefoxNewLoginTest.java
  FirefoxNewLoginTest
 CorrectOpenedPageTest.java
  CorrectOpenedPageTest
-AlfabetCountryTest.java
- AlfabetCountryTest
 CreateNewUserTest.java
  CreateNewUserTest
+AlfabetCountryTest.java
+ AlfabetCountryTest

@@ -89,7 +89,8 @@ public class AlfabetCountryTest{
         for (String c: countryItems
         ) {
             driver.findElement(By.linkText(c)).click();
-            alfabetCheckSort("select[name*=zone_code]");
+            alfabetCheckSort("select[name*=zone_code] [selected = selected]");
+
             driver.get("http://localhost/litecart/litecart-1.3.7/public_html/admin/?app=geo_zones&doc=geo_zones");
         }
     }
@@ -105,6 +106,9 @@ public class AlfabetCountryTest{
             countryItems.add(i.getText());
             countrySortedItems.add(i.getText());
         }
+        System.out.println(countryItems);
+        System.out.println("---------");
+        System.out.println(countrySortedItems);
         Collections.sort(countrySortedItems);
 
         Assert.assertTrue(countryItems.equals(countrySortedItems));
