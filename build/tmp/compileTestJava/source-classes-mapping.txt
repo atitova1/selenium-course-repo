@@ -26,3 +26,5 @@ CheckExistence.java
  CheckExistence
 AddNewProductTest.java
  AddNewProductTest
+CartTest.java
+ CartTest
