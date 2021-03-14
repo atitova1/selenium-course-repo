@@ -28,3 +28,6 @@ AddNewProductTest.java
  AddNewProductTest
 CartTest.java
  CartTest
+NewWindowTest.java
+ NewWindowTest
+ NewWindowTest$1

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5867263-d9bb-4d56-8c53-fde101523631" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/NewWindowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,8 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/AddNewProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/AddNewProductTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CartTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CartTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartTest.cartTest">
+  <component name="RunManager" selected="JUnit.NewWindowTest.addNewProductTest">
     <configuration name="AddNewProductTest.addNewProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -139,11 +137,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateNewUserTest.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NewWindowTest.addNewProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateNewUserTest" />
-      <option name="METHOD_NAME" value="createUserTest" />
+      <option name="MAIN_CLASS_NAME" value="NewWindowTest" />
+      <option name="METHOD_NAME" value="addNewProductTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NewWindowTest.addNewProductTest" />
         <item itemvalue="JUnit.CartTest.cartTest" />
         <item itemvalue="JUnit.CartTest.basketTest" />
         <item itemvalue="JUnit.AddNewProductTest.addNewProductTest" />
         <item itemvalue="JUnit.AlfabetCountryTest.timeZonesAflabetTestOnZonesPage" />
-        <item itemvalue="JUnit.CreateNewUserTest.createUserTest" />
       </list>
     </recent_temporary>
   </component>
