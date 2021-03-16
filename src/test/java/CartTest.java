@@ -30,55 +30,36 @@ public class CartTest {
 
     @Test
     public void cartTest() {
-        driver.get("http://localhost/litecart/litecart-1.3.7/public_html/en/");
-        int cartCount = Integer.parseInt(driver.findElement(By.cssSelector(".quantity")).getText());
-        String firstProduct = driver.findElements(By.cssSelector(".product .name")).get(0).getText();
-        driver.findElements(By.cssSelector(".product .name")).get(0).click();
-        driver.findElement(By.cssSelector("[name = add_cart_product]")).click();
-        cartCount++;
-        wait.until(textToBePresentInElementLocated(By.cssSelector(".quantity"),String.valueOf(cartCount)));
-
-        //Добавляю еще уточку
-        driver.get("http://localhost/litecart/litecart-1.3.7/public_html/en/");
-        driver.findElement(By.partialLinkText(firstProduct)).click();
-        driver.findElement(By.cssSelector("[name = add_cart_product]")).click();
-        cartCount++;
-        wait.until(textToBePresentInElementLocated(By.cssSelector(".quantity"),String.valueOf(cartCount)));
-
-        //Добавляю еще уточку
-        driver.get("http://localhost/litecart/litecart-1.3.7/public_html/en/");
-        driver.findElement(By.partialLinkText(firstProduct)).click();
-        driver.findElement(By.cssSelector("[name = add_cart_product]")).click();
-        cartCount++;
-        wait.until(textToBePresentInElementLocated(By.cssSelector(".quantity"),String.valueOf(cartCount)));
-
+        addProducts(3);
         driver.findElement(By.partialLinkText("Checkout")).click();
-
         try {
             Thread.sleep(1000);
         } catch (InterruptedException ex) {
         }
-        driver.findElement(By.cssSelector("[name = quantity]")).clear();
-        cartCount--;
-        driver.findElement(By.cssSelector("[name = quantity]")).sendKeys(String.valueOf(cartCount));
-        driver.findElement(By.cssSelector("[name = update_cart_item]")).click();
-        wait.until(visibilityOfElementLocated(By.id("order_confirmation-wrapper")));
-        wait.until(elementToBeClickable(By.cssSelector("[name = update_cart_item]")));
+        deleteAllProducts();
+    }
 
-        //Удаляю еще уточку (или собачку)
-        driver.findElement(By.cssSelector("[name = quantity]")).clear();
-        cartCount--;
-        driver.findElement(By.cssSelector("[name = quantity]")).sendKeys(String.valueOf(cartCount));
-        driver.findElement(By.cssSelector("[name = update_cart_item]")).click();
-        wait.until(visibilityOfElementLocated(By.id("order_confirmation-wrapper")));
-        wait.until(elementToBeClickable(By.cssSelector("[name = update_cart_item]")));
+    public void addProducts(int count) {
+        driver.get("http://localhost/litecart/litecart-1.3.7/public_html/en/");
+        int cartCount = Integer.parseInt(driver.findElement(By.cssSelector(".quantity")).getText());
+        for (int i = 0; i < count; i++) {
+            driver.get("http://localhost/litecart/litecart-1.3.7/public_html/en/");
+            driver.findElements(By.cssSelector(".product .name")).get(0).click();
+            driver.findElement(By.cssSelector("[name = add_cart_product]")).click();
+            cartCount++;
+            wait.until(textToBePresentInElementLocated(By.cssSelector(".quantity"), String.valueOf(cartCount)));
+        }
+    }
 
-        //Удаляю еще уточку (или собачку)
-        driver.findElement(By.cssSelector("[name = quantity]")).clear();
-        cartCount--;
-        driver.findElement(By.cssSelector("[name = quantity]")).sendKeys(String.valueOf(cartCount));
-        driver.findElement(By.cssSelector("[name = update_cart_item]")).click();
-        wait.until(visibilityOfElementLocated(By.id("order_confirmation-wrapper")));
+    public void deleteAllProducts(){
+        int uniqueProductsCount = driver.findElements(By.cssSelector(".shortcut")).size();
+        for (int i = 0; i < uniqueProductsCount - 1; i++) {
+            driver.findElements(By.cssSelector(".shortcut")).get(0).click();
+            driver.findElement((By.cssSelector("[name = remove_cart_item]"))).click();
+            wait.until(elementToBeClickable(By.cssSelector("[name = remove_cart_item]")));
+            wait.until(visibilityOfElementLocated(By.cssSelector(".dataTable")));
+        }
+        driver.findElement((By.cssSelector("[name = remove_cart_item]"))).click();
     }
 
     @AfterEach

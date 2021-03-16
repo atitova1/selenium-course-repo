@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5867263-d9bb-4d56-8c53-fde101523631" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/NewWindowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,6 +14,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/CartTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CartTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NewWindowTest.addNewProductTest">
+  <component name="RunManager" selected="JUnit.CartTest">
     <configuration name="AddNewProductTest.addNewProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -107,12 +108,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlfabetCountryTest.timeZonesAflabetTestOnZonesPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AlfabetCountryTest" />
-      <option name="METHOD_NAME" value="timeZonesAflabetTestOnZonesPage" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="CartTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NewWindowTest.addNewProductTest" />
+        <item itemvalue="JUnit.CartTest" />
         <item itemvalue="JUnit.CartTest.cartTest" />
+        <item itemvalue="JUnit.NewWindowTest.addNewProductTest" />
         <item itemvalue="JUnit.CartTest.basketTest" />
         <item itemvalue="JUnit.AddNewProductTest.addNewProductTest" />
-        <item itemvalue="JUnit.AlfabetCountryTest.timeZonesAflabetTestOnZonesPage" />
       </list>
     </recent_temporary>
   </component>
