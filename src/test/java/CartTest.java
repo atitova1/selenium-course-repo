@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
@@ -55,9 +56,11 @@ public class CartTest {
         int uniqueProductsCount = driver.findElements(By.cssSelector(".shortcut")).size();
         for (int i = 0; i < uniqueProductsCount - 1; i++) {
             driver.findElements(By.cssSelector(".shortcut")).get(0).click();
+            WebElement dataTable = driver.findElement(By.cssSelector(".dataTable"));
             driver.findElement((By.cssSelector("[name = remove_cart_item]"))).click();
+            wait.until(ExpectedConditions.stalenessOf(dataTable));
+            dataTable = driver.findElement(By.cssSelector(".dataTable"));
             wait.until(elementToBeClickable(By.cssSelector("[name = remove_cart_item]")));
-            wait.until(visibilityOfElementLocated(By.cssSelector(".dataTable")));
         }
         driver.findElement((By.cssSelector("[name = remove_cart_item]"))).click();
     }
