@@ -2,14 +2,19 @@ MyFirstTest.java
  MyFirstTest
 AlfabetCountryTest.java
  AlfabetCountryTest
-CheckStickersTest.java
- CheckStickersTest
+NewWindowTest.java
+ NewWindowTest
+ NewWindowTest$1
+AddNewProductTest.java
+ AddNewProductTest
 ClickMenuTest.java
  ClickMenuTest
 FirefoxNewLoginTest.java
  FirefoxNewLoginTest
 SafariLoginTest.java
  SafariLoginTest
+CartTest.java
+ CartTest
 CreateNewUserTest.java
  CreateNewUserTest
 FirefoxNightlyLoginTest.java
@@ -24,10 +29,9 @@ LoginStep.java
  LoginStep
 CheckExistence.java
  CheckExistence
-AddNewProductTest.java
- AddNewProductTest
-NewWindowTest.java
- NewWindowTest
- NewWindowTest$1
-CartTest.java
- CartTest
+CheckStickersTest.java
+ CheckStickersTest
+CartTestCloud.java
+ CartTestCloud
+BrowserMessagesTest.java
+ BrowserMessagesTest

@@ -7,9 +7,15 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -23,20 +29,23 @@ public class CartTest {
 
 
     @BeforeEach
-    public void start() {
-        driver = new ChromeDriver();
+    public void start() throws MalformedURLException {
+        //driver = new ChromeDriver();
+        //driver = new RemoteWebDriver(new URL("http://192.168.10.113:4444/wd/hub"), new FirefoxOptions());
+        driver = new RemoteWebDriver(new URL("http://192.168.10.113:4444/wd/hub"), new ChromeOptions());
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver,10);
     }
 
     @Test
-    public void cartTest() {
+    public void cartTest() throws InterruptedException {
         addProducts(3);
         driver.findElement(By.partialLinkText("Checkout")).click();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-        }
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException ex) {
+//        }
+        Thread.sleep(1000);
         deleteAllProducts();
     }
 
