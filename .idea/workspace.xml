@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5867263-d9bb-4d56-8c53-fde101523631" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CharlesProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MainProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/OrderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AdvancedCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,8 +20,46 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/AddNewProductTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/AlfabetCountryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BrowserMessagesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CartTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CartTestCloud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CharlesProxyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CheckExistence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CheckStickersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ClickMenuTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CorrectOpenedPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CreateNewUserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/FirefoxNewLoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/FirefoxNightlyLoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/FirefoxOldLoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/MyFirstTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/NewWindowTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/NewWindowTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SafariLoginTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AlfabetCountryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AlfabetCountryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BrowserMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BrowserMessagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CartTestCloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CartTestCloud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CharlesProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CharlesProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckExistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CheckExistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckStickersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CheckStickersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ClickMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ClickMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CorrectOpenedPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CorrectOpenedPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateNewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirefoxNewLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FirefoxNewLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirefoxNightlyLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FirefoxNightlyLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirefoxOldLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FirefoxOldLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyFirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MyFirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NewWindowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NewWindowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SafariLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SafariLoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,21 +138,31 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+      <recent name="tests" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CharlesProxyTest">
-    <configuration name="CloudTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CloudTest" />
+  <component name="RunManager" selected="JUnit.AdvancedCartTest">
+    <configuration name="AdvancedCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdvancedCartTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="BrowserMessagesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BrowserMessagesTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BrowserMessagesTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,8 +170,8 @@
     </configuration>
     <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CartTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CartTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,8 +179,8 @@
     </configuration>
     <configuration name="CartTestCloud" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CartTestCloud" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CartTestCloud" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,8 +188,8 @@
     </configuration>
     <configuration name="CharlesProxyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharlesProxyTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CharlesProxyTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdvancedCartTest" />
         <item itemvalue="JUnit.CharlesProxyTest" />
         <item itemvalue="JUnit.BrowserMessagesTest" />
         <item itemvalue="JUnit.CartTestCloud" />
         <item itemvalue="JUnit.CartTest" />
-        <item itemvalue="Application.CloudTest" />
       </list>
     </recent_temporary>
   </component>
