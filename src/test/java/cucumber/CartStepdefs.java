@@ -15,6 +15,9 @@ public class CartStepdefs  extends CucumberTestBase implements En {
         Then("^delete all products from cart$", () -> {
             app.deleteAllProducts();
         });
+        Then("^the cart is empty$", () -> {
+            app.isCartEmpty();
+        });
 
     }
 }

@@ -1,5 +1,5 @@
-tests/CartTest.java
- tests.CartTest
+tests/AlfabetCountryTest.java
+ tests.AlfabetCountryTest
 tests/CharlesProxyTest.java
  tests.CharlesProxyTest
 pages/Page.java
@@ -12,8 +12,8 @@ pages/ProductPage.java
  pages.ProductPage
 tests/FirefoxOldLoginTest.java
  tests.FirefoxOldLoginTest
-cucumber/CucumberTestBase.java
- cucumber.CucumberTestBase
+tests/CreateNewUserTest.java
+ tests.CreateNewUserTest
 tests/CheckStickersTest.java
  tests.CheckStickersTest
 tests/ClickMenuTest.java
@@ -28,10 +28,10 @@ pages/MainProductsPage.java
  pages.MainProductsPage
 tests/LoginTest.java
  tests.LoginTest
-tests/TestBase.java
- tests.TestBase
-tests/AdvancedCartTest.java
- tests.AdvancedCartTest
+tests/SafariLoginTest.java
+ tests.SafariLoginTest
+tests/CartTestCloud.java
+ tests.CartTestCloud
 tests/LoginStep.java
  tests.LoginStep
 tests/NewWindowTest.java
@@ -45,17 +45,19 @@ tests/AddNewProductTest.java
  tests.AddNewProductTest
 tests/FirefoxNewLoginTest.java
  tests.FirefoxNewLoginTest
-app/Application.java
- app.Application
-tests/SafariLoginTest.java
- tests.SafariLoginTest
-tests/CreateNewUserTest.java
- tests.CreateNewUserTest
-tests/AlfabetCountryTest.java
- tests.AlfabetCountryTest
-tests/CartTestCloud.java
- tests.CartTestCloud
 cucumber/CartStepdefs.java
  cucumber.CartStepdefs
+pages/CheckoutPage.java
+ pages.CheckoutPage
+tests/AdvancedCartTest.java
+ tests.AdvancedCartTest
+app/Application.java
+ app.Application
 cucumber/GeneralStepdefs.java
  cucumber.GeneralStepdefs
+cucumber/CucumberTestBase.java
+ cucumber.CucumberTestBase
+tests/TestBase.java
+ tests.TestBase
+tests/CartTest.java
+ tests.CartTest

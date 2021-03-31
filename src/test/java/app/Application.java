@@ -3,6 +3,7 @@ package app;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pages.CheckoutPage;
 import pages.MainProductsPage;
 import pages.OrderPage;
 import pages.ProductPage;
@@ -17,12 +18,14 @@ public class Application {
     private MainProductsPage mainProductsPage;
     private ProductPage productPage;
     private OrderPage orderPage;
+    private CheckoutPage checkOutPage;
 
     public Application() {
         driver = new ChromeDriver();
         mainProductsPage = new MainProductsPage(driver);
         productPage = new ProductPage(driver);
         orderPage = new OrderPage(driver);
+        checkOutPage = new CheckoutPage(driver);
     }
 
     public void quit() {
@@ -48,4 +51,6 @@ public class Application {
     public void deleteAllProducts() {
         orderPage.deleteAllProducts();
     }
+
+    public void isCartEmpty() {checkOutPage.isCartEmpty();}
 }
