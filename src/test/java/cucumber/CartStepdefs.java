@@ -2,7 +2,7 @@ package cucumber;
 
 import io.cucumber.java8.En;
 
-public class CartStepdefs  extends CucumberTestBase implements En {
+public class CartStepdefs extends CucumberTestBase implements En {
     public CartStepdefs() {
         When("^'(\\d+)' products are added in cart$", (Integer productsCount) -> {
             app.addProducts(productsCount);

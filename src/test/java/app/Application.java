@@ -1,12 +1,10 @@
 package app;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.CheckoutPage;
-import pages.MainProductsPage;
-import pages.OrderPage;
-import pages.ProductPage;
+import pages.*;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElementLocated;
 
@@ -19,6 +17,8 @@ public class Application {
     private ProductPage productPage;
     private OrderPage orderPage;
     private CheckoutPage checkOutPage;
+    private YandexPage yandexPage;
+    private FoundResultsPage foundResultsPage;
 
     public Application() {
         driver = new ChromeDriver();
@@ -26,6 +26,8 @@ public class Application {
         productPage = new ProductPage(driver);
         orderPage = new OrderPage(driver);
         checkOutPage = new CheckoutPage(driver);
+        yandexPage = new YandexPage(driver);
+        foundResultsPage = new FoundResultsPage(driver);
     }
 
     public void quit() {
@@ -53,4 +55,17 @@ public class Application {
     }
 
     public void isCartEmpty() {checkOutPage.isCartEmpty();}
+
+    public void yandexSearch() {
+        yandexPage.open();
+        yandexPage.makeSearch();
+    }
+
+    public void flatsAreFound() {
+        foundResultsPage.resultsFound();
+    }
+
+    public void visitEverySite() throws InterruptedException {
+        foundResultsPage.visitEverySite();
+    }
 }
